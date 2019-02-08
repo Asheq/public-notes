@@ -101,24 +101,8 @@ function sayHello() {
 </div>
 ```
 
-*Note: Syntax highlighting is not supported in core Markdown spec but is supported in Github Flavored Markdown*
+*Note:* Syntax highlighting is not supported in core Markdown spec but is supported in Github Flavored Markdown
 
-
-## Table
-*Note: Tables are not supported in core Markdown spec but are supported in Github Flavored Markdown*
-
-Table with vertical lines and dashes:
-
-| Name     | Email              | Age | Alias
-| ---      | :---:              | ---:| ---
-| John Doe | john@gmail.com     | 45  | `heresjohnny`
-| Jane Doe | jane.doe@gmail.com | 43  | `janeofthejungle`
-
-Notes:
-* Colons can be used to align columns
-* Outer pipes are optional
-* Raw Markdown does not need to line up prettily
-* Can embed inline Markdown
 
 ## Block quote
 > Block quote with a leading greater-than sign. You can continue onto a new line (but a new line
@@ -150,13 +134,29 @@ This is a new line in the same paragraph.
 
 ## Task list
 
-*Note: Task lists are not supported in core Markdown spec but are supported in Github Flavored Markdown*
-
 Task list with leading square brackets:
 
 * [x] Completed task
 * [x] Completed task
 * [ ] Uncompleted task
+
+*Note:* Task lists are not supported in core Markdown spec but are supported in Github Flavored Markdown
+
+## Table
+
+Table with vertical lines and dashes:
+
+| Name     | Email              | Age | Alias
+| ---      | :---:              | ---:| ---
+| John Doe | john@gmail.com     | 45  | `heresjohnny`
+| Jane Doe | jane.doe@gmail.com | 43  | `janeofthejungle`
+
+<i>Notes:</i>
+* Colons can be used to align columns
+* Outer pipes are optional
+* Raw Markdown does not need to line up prettily
+* Can embed inline Markdown
+* Tables are not supported in core Markdown spec but are supported in Github Flavored Markdown*
 
 ## Headings
 Headings with leading number signs:
