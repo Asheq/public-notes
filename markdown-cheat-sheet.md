@@ -38,7 +38,7 @@ Ordered list with leading `1.`:
 	1. Nested Item
 	1. Nested Item
 
-		Paragraph 1 for nested list item with a blank like and 2 leading whitespace characters
+		Paragraph 1 for nested list item with a blank line and 2 leading whitespace characters
 
 		Paragraph 2 for nested list item. To create a line break  
 		without creating a new paragraph, add two trailing spaces.
@@ -76,33 +76,6 @@ Image that is a link:
 ## Inline code
 * Inline code with `backticks`
 
-## Code block
-```
-Code block
-	with triple backticks
-```
-
-```bash
-npm install
-npm start
-```
-
-```javascript
-// This code block will be syntax highlighted as JavaScript
-function sayHello() {
-	console.log('Hello')
-}
-```
-
-```html
-<!-- This code block will be syntax highlighted as HTML -->
-<div>
-	<i>Hello</i>
-</div>
-```
-
-*Note:* Syntax highlighting is not supported in core Markdown spec but is supported in Github Flavored Markdown
-
 
 ## Block quote
 > Block quote with a leading greater-than sign. You can continue onto a new line (but a new line
@@ -132,6 +105,34 @@ This line is displayed as if it is part of the previous line.
 This line is part of a new separate paragraph.  
 This is a new line in the same paragraph.
 
+## Code block
+```
+Code block
+	with triple backticks.
+  Whitespace is preserved.
+```
+
+```bash
+npm install
+npm start
+```
+
+```javascript
+// This code block will be syntax highlighted as JavaScript
+function sayHello() {
+	console.log('Hello')
+}
+```
+
+```html
+<!-- This code block will be syntax highlighted as HTML -->
+<div>
+	<i>Hello</i>
+</div>
+```
+
+*Note:* Syntax highlighting is not supported in core Markdown spec but is supported in Github Flavored Markdown
+
 ## Task list
 
 Task list with leading square brackets:
@@ -156,7 +157,8 @@ Table with vertical lines and dashes:
 * Outer pipes are optional
 * Raw Markdown does not need to line up prettily
 * Can embed inline Markdown
-* Tables are not supported in core Markdown spec but are supported in Github Flavored Markdown*
+
+*Note:* Tables are not supported in core Markdown spec but are supported in Github Flavored Markdown
 
 ## Headings
 Headings with leading number signs:
