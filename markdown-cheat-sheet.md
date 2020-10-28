@@ -1,5 +1,7 @@
 <!-- This is a comment and will not be displayed in output -->
 
+# Markdown
+
 ## Emphasis
 Emphasis (italics) with *asterisks* or _underscores_
 
@@ -45,7 +47,7 @@ Ordered list with leading `1.`:
 
 ## Link
 * Link with square brackets (and parentheses):
-	* [Inline style](http://example.com "Title, aka text to show on hover")
+	* [In-line style](http://example.com "Title, aka text to show on hover")
 	* [Reference style #1][1]
 	* [Reference style #2][Arbitrary case-insensitive reference text]
 	* Reference style #3: [link text itself]
@@ -63,7 +65,7 @@ Ordered list with leading `1.`:
 
 The syntax for an image is the same as that for for a link but with a leading exclamation mark:
 
-![Inline style](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+![In-line style](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
 
 ![Reference style][logo]
 
@@ -71,10 +73,10 @@ The syntax for an image is the same as that for for a link but with a leading ex
 
 Image that is a link:
 
-[![4K VIDEO](http://img.youtube.com/vi/Bey4XXJAqS8/0.jpg)](http://www.youtube.com/watch?feature=player_embedded&v=Bey4XXJAqS8)
+[![4K VIDEO](https://upload.wikimedia.org/wikipedia/en/8/88/DuckDuckGo_logo.svg)](https://duckduckgo.com/)
 
-## Inline code
-* Inline code with `backticks`
+## In-line code
+* In-line code with `backticks`
 
 
 ## Block quote
@@ -95,7 +97,7 @@ Image that is a link:
     </a>
 </div>
 
-## Line Breaks
+## Line breaks
 
 This line is displayed in its own paragraph.
 
@@ -131,7 +133,7 @@ function sayHello() {
 </div>
 ```
 
-*Note:* Syntax highlighting is not supported in core Markdown spec but is supported in Github Flavored Markdown
+*Note:* Syntax highlighting is not supported in core Markdown spec but is supported in GitHub Flavored Markdown
 
 ## Task list
 
@@ -141,7 +143,7 @@ Task list with leading square brackets:
 * [x] Completed task
 * [ ] Uncompleted task
 
-*Note:* Task lists are not supported in core Markdown spec but are supported in Github Flavored Markdown
+*Note:* Task lists are not supported in core Markdown spec but are supported in GitHub Flavored Markdown
 
 ## Table
 
@@ -156,31 +158,13 @@ Table with vertical lines and dashes:
 * Colons can be used to align columns
 * Outer pipes are optional
 * Raw Markdown does not need to line up prettily
-* Can embed inline Markdown
+* Can embed in-line Markdown
 
-*Note:* Tables are not supported in core Markdown spec but are supported in Github Flavored Markdown
+*Note:* Tables are not supported in core Markdown spec but are supported in GitHub Flavored Markdown
 
-## Headings
-Headings with leading number signs:
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
 
-Heading 1 with Equal Signs
-===
-
-Heading 2 with Hyphens
----
-
-## Horizontal Rule
+## Markdown Horizontal Rules
 A horizontal rule with a series of (3+)
-
-hyphens
-
----
 
 underscores
 
@@ -189,3 +173,19 @@ ___
 asterisks
 
 ***
+
+
+Markdown Heading 1 with hyphens
+---
+
+Markdown Heading 1 with equal signs
+===
+
+# Markdown Headings with number signs 
+
+Headings with leading number signs:
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
