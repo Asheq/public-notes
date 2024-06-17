@@ -1,0 +1,89 @@
+# Text Objects
+- word
+- WORD
+- quotes
+    - "
+    - '
+    - `` ` ``
+- sentence
+- paragraph
+- section
+- brackets:
+    - {
+    - (
+    - [
+    - <
+- tag (<div>...</div>)
+
+# Text Object Motions
+- word
+    - w
+    - e
+    - b
+    - ge
+- WORD
+    - W
+    - E
+    - B
+    - gE
+- quotes
+- sentence
+    - )
+    - (
+- paragraph
+    - }
+    - {
+- section
+    - [[
+    - ]]
+- brackets
+    - {
+        - [{
+        - ]}
+    - (
+        - [(
+        - ])
+    - [
+    - <
+- tag
+
+# Text Object Selections
+- word
+    - iw
+    - aw
+- WORD
+    - iW
+    - aW
+- quotes:
+    - "
+        - i"
+        - a"
+    - '
+        - i'
+        - a'
+    - `` ` ``
+        - `` i` ``
+        - `` a` ``
+- sentence
+    - is
+    - as
+- paragraph
+    - ip
+    - ap
+- section
+- brackets
+    - {
+        - i{ or iB
+        - a{ or aB
+    - (
+        - i( or ib
+        - a( or ab
+    - [
+        - i[
+        - a[
+    - <
+        - i<
+        - a<
+- tag
+    - it
+    - at
