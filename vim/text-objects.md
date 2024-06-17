@@ -1,4 +1,4 @@
-# Text Objects
+# List of Text Objects
 - word
 - WORD
 - quotes
@@ -13,77 +13,77 @@
     - (
     - [
     - <
-- tag (<div>...</div>)
+- tag (example: <div>...</div>)
 
-# Text Object Motions
+# List of Text Object Motions
 - word
-    - w
-    - e
-    - b
-    - ge
+    - `w`
+    - `e`
+    - `b`
+    - `ge`
 - WORD
-    - W
-    - E
-    - B
-    - gE
+    - `W`
+    - `E`
+    - `B`
+    - `gE`
 - quotes
 - sentence
-    - )
-    - (
+    - `)`
+    - `(`
 - paragraph
-    - }
-    - {
+    - `}`
+    - `{`
 - section
-    - [[
-    - ]]
+    - `[[`
+    - `]]`
 - brackets
     - {
-        - [{
-        - ]}
+        - `[{`
+        - `]}`
     - (
-        - [(
-        - ])
+        - `[(`
+        - `])`
     - [
     - <
 - tag
 
-# Text Object Selections
+# List of Text Object Selections
 - word
-    - iw
-    - aw
+    - `iw`
+    - `aw`
 - WORD
-    - iW
-    - aW
-- quotes:
+    - `iW`
+    - `aW`
+- quotes
     - "
-        - i"
-        - a"
+        - `i"`
+        - `a"`
     - '
-        - i'
-        - a'
+        - `i'`
+        - `a'`
     - `` ` ``
         - `` i` ``
         - `` a` ``
 - sentence
-    - is
-    - as
+    - `is`
+    - `as`
 - paragraph
-    - ip
-    - ap
+    - `ip`
+    - `ap`
 - section
 - brackets
     - {
-        - i{ or iB
-        - a{ or aB
+        - `i{` or `iB`
+        - `a{` or `aB`
     - (
-        - i( or ib
-        - a( or ab
+        - `i(` or `ib`
+        - `a(` or `ab`
     - [
-        - i[
-        - a[
+        - `i[`
+        - `a[`
     - <
-        - i<
-        - a<
+        - `i<`
+        - `a<`
 - tag
-    - it
-    - at
+    - `it`
+    - `at`

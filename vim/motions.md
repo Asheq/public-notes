@@ -1,4 +1,5 @@
-Motion            | Linewise (L) or Characterwise (C)     | Inclusive (I) or Exclusive (E)
+# List of Motions
+Motion            | Linewise (L) or Charwise (C)          | Inclusive (I) or Exclusive (E)
 :---:             | :---:                                 | :---:
 `j`               | L                                     | N/A
 `k`               | L                                     | N/A
