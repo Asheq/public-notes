@@ -1,5 +1,5 @@
-Motion            | Line wise (L) or Character wise \(C\) | Inclusive (I) or Exclusive (E)
----               | :---:                                 | :---:
+Motion            | Linewise (L) or Characterwise (C)     | Inclusive (I) or Exclusive (E)
+:---:             | :---:                                 | :---:
 `j`               | L                                     | N/A
 `k`               | L                                     | N/A
 `-`               | L                                     | N/A
