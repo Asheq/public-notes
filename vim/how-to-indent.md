@@ -1,14 +1,14 @@
 Below, `N` is a number and `range` is a line range (see `:help :range`)
 
-# In Normal-mode
+# In Normal mode
 	[N]>>
 		Indent N lines once
 
-# In Visual-mode
+# In Visual mode
 	[N]>
 		Indent selected lines N times
 
-# In Command-line mode
+# In Command line mode
 	:[range]>
 		Indent lines in range once
 	:[range]>>

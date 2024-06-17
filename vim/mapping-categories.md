@@ -1,5 +1,3 @@
-Types of mappings
-============================================================================
 - Leader
 - Starts with z
 - Starts with g
