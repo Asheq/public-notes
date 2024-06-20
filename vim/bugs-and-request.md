@@ -4,6 +4,8 @@
     - gUw => check `[ and `] => this is correct
     - yw => check `[ and `] => bug: `] is one character to the right
     - insert text => check `[ and `] => bug: `] is one character to the right
+
+- Default neovim colorscheme causes NonText highlight group (and linked Whitespace highlight group ) to "disappear" inside visual selection. This is not ideal.
     ```
 
 # Requests to make to neovim

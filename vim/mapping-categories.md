@@ -4,5 +4,5 @@
 - Starts with ] or [
 - Starts with an operator (c, d, y, =)
 - Control
-- Alt/Meta
+- Alt/Meta/Option
 - Other

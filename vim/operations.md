@@ -1,11 +1,11 @@
-# Operations with MOTIONS
-- An OPERATION using a MOTION either affects the entire start and end lines OR just the characters based on whether the MOTION that is used is linewise or charwise (with some exceptions)
-	- Example linewise MOTIONS
+# OPERATIONS with MOTIONS
+- An OPERATION using a LINEWISE MOTION affects all the characters on the start line and end line (and on all the lines between them), including the newlines. An OPERATION using a CHARWISE MOTION affects just the start character and end character (and all the characters between them).
+	- Example LINEWISE MOTIONS
 		- j
 		- k
 		- gg
 		- G
-	- Example charwise MOTIONS
+	- Example CHARWISE MOTIONS
 		- e, E
 		- w, W
 		- b, B
@@ -13,48 +13,47 @@
 		- )
         - gj
         - gk
-		- { with exception when ???
-		- } with exception when starting on first non-blank of line and ???
 
-- Each charwise MOTION is either inclusive or exclusive. An OPERATION using an exclusive MOTION does not include the last character (towards the end of the buffer) that was moved over. There are two general exceptions: http://vimdoc.sourceforge.net/htmldoc/motion.html#exclusive
-	- Example inclusive MOTIONS
+- Each CHARWISE MOTION is either INCLUSIVE or EXCLUSIVE. An OPERATION using an EXCLUSIVE MOTION does not include the last character (towards the end of the buffer) that was moved over.
+	- Example INCLUSIVE MOTIONS
 		- e, E
-	- Example exclusive MOTIONS
+	- Example EXCLUSIVE MOTIONS
 		- w, W
 		- b, B
         - (
         - )
         - gj
         - gk
-        - { with exception when ???
-        - } with exception when ???
 
-- All linewise MOTIONS are inclusive. In other words, an OPERATION using a linewise MOTION includes the last line (towards the end of the buffer) that was moved over.
+- All LINEWISE MOTIONS are INCLUSIVE. In other words, an OPERATION using a LINEWISE MOTION includes the last line (towards the end of the buffer) that was moved over.
 
-# Operations with TEXT OBJECTS
-- An OPERATION using a TEXT OBJECT either affects whole lines or characters based on whether the TEXT OBJECT that is used is linewise or charwise. When a TEXT OBJECT is used in Visual mode, you are changed to or left in either Visual linewise mode or Visual charwise mode depending on whether the TEXT OBJECT is linewise or charwise.
-	- Example linewise TEXT OBJECTS:
+# OPERATIONS with TEXT OBJECTS
+- An OPERATION using a LINEWISE TEXT OBJECT affects all the characters on the start line and end line (and on all the lines between them), including the newlines. An OPERATION using a CHARWISE TEXT OBJECT affects just the start character and end character (and all the characters between them).
+	- Example LINEWISE TEXT OBJECTS:
 		- ip
 		- ap
-	- Example charwise TEXT OBJECTS:
+	- Example CHARWISE TEXT OBJECTS:
 		- iw
 		- aw
 		- is
 		- as
-- All TEXT OBJECTS are inclusive. An OPERATION using a TEXT OBJECT includes the last character or line (towards the end of the buffer) that was part of the TEXT OBJECT.
 
-# Force change behavior or OPERATION
-You can force change the behavior of an OPERATION by entering v or V just after the operator
+- All TEXT OBJECTS are INCLUSIVE. An OPERATION using a TEXT OBJECT includes the last character or line (towards the end of the buffer) that was part of the TEXT OBJECT.
+
+- When a TEXT OBJECT is used in Visual mode, you are changed to or left in either Visual LINEWISE mode or Visual CHARWISE mode to match the TEXT OBJECT.
+
+# Force change behavior of OPERATION
+You can force change the behavior of an OPERATION by entering v or V just after the OPERATOR
     - v
-        - if MOTION is linewise, make it charwise (exclusive)
-        - if MOTION is charwise, toggle inclusive/exclusive
-        - if TEXT OBJECT is charwise, make it charwise exclusive
-        - if TEXT OBJECT is linewise, make it linewise exclusive
+        - if MOTION is LINEWISE, make it CHARWISE (EXCLUSIVE)
+        - if MOTION is CHARWISE, toggle INCLUSIVE/EXCLUSIVE
+        - if TEXT OBJECT is LINEWISE, make it LINEWISE EXCLUSIVE
+        - if TEXT OBJECT is CHARWISE, make it CHARWISE EXCLUSIVE
     - V
-        - if MOTION is charwise, make it linewise
-        - if TEXT OBJECT is charwise, make it linewise
+        - if MOTION is CHARWISE, make it LINEWISE
+        - if TEXT OBJECT is CHARWISE, make it LINEWISE
     - CTRL-V
-        - if MOTION is charwise or linewise, make it blockwise (with the corners of the block defined by the cursor before and after)
+        - if MOTION is CHARWISE or LINEWISE, make it BLOCKWISE (with the corners of the block defined by the cursor positions before and after)
 
 *Examples*:
 - `dj` - Deletes two lines.
@@ -66,4 +65,6 @@ You can force change the behavior of an OPERATION by entering v or V just after 
 
 - `cw` and `cW` are special OPERATIONS: the `w` is treated like an `e`
 
-- Confusing NOTE: When text that is operated on is placed in a register (e.g., via a yank or delete), sometimes it includes a newline but this is not always related to anything else, e.g., whether the MOTION or TEXT OBJECT is linewise/charwise or inclusive/exclusive. This is confusing. Example: `yas` when there is only one sentence on the line vs when there are multiple sentences on the line.
+- There are two general exceptions to how MOTIONS work: http://vimdoc.sourceforge.net/htmldoc/motion.html#exclusive
+
+- Confusing NOTE: When text that is operated on is placed in a register (e.g., via a yank or delete), sometimes it includes a newline but this is not always related to anything else, e.g., whether the MOTION or TEXT OBJECT is LINEWISE/CHARWISE or INCLUSIVE/EXCLUSIVE. This is confusing. Example: `yas` when there is only one sentence on the line vs when there are multiple sentences on the line.
