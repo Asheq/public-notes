@@ -9,7 +9,7 @@
 - Default neovim colorscheme causes NonText highlight group (and linked Whitespace highlight group ) to "disappear" inside visual selection.
 
 
-# Requests to make to neovim
+# Requests to make to vim
 - Jumping to opening or closing brackets from inside a bracket pair should work for all types of brackets including:
     - [[
     - ]]
@@ -19,6 +19,8 @@
 - Make jumplist updates consistent with `'` mark updates
     - The jumplist is only updated if the command is a "jump" command AND the cursor moves into a new line
     - The `'` mark is updated if the command is a "jump" command, regardless of whether the cursor moves into a new line or not
+
+- When 'linebreak' and 'wrap' are set, visually selecting a wrapped line highlights empty space (no text at all there, not even white space, not even a newline character) at the end of a screen line.
 
 # Requests to make to coc.nvim
 - Override these commands with LSP
