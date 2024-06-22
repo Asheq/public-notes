@@ -6,8 +6,20 @@
     - insert text => check `[ and `] => bug: `] is one character to the right
     ```
 
-- Default neovim colorscheme causes NonText highlight group (and linked Whitespace highlight group ) to "disappear" inside visual selection.
+- Default neovim colorscheme
+    - Causes NonText highlight group (and linked Whitespace highlight group ) to "disappear" inside Visual selection.
+    - StatusLineNC highlight group background is same as CursorLine. StatusLineNC gackground is probably better as being same as Visual
 
+- Visual selection includes "empty" space
+    - Repro steps
+        - insert text: '    thisisaverylongword    anotherverylongword    anotherone     lastonethatislong'
+        - set linebreak
+        - set breakindent
+        - set list
+        - set listchars=space:-,eol:$
+        - set showbreak=>
+        - Decrease window width to make text wrap
+        - visually select line entire line `0v$` or `V`
 
 # Requests to make to vim
 - Jumping to opening or closing brackets from inside a bracket pair should work for all types of brackets including:
