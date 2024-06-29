@@ -14,7 +14,7 @@
         - gj
         - gk
 
-- Each CHARWISE MOTION is either INCLUSIVE or EXCLUSIVE. An OPERATION using an EXCLUSIVE MOTION does not include the last character (towards the end of the buffer) that was moved over, whereas using an INCLUSIVE MOTION does.
+- Each CHARWISE MOTION is either INCLUSIVE or EXCLUSIVE. An OPERATION using an EXCLUSIVE MOTION does not include the last character (towards the end of the buffer), whereas using an INCLUSIVE MOTION does.
 	- Example INCLUSIVE MOTIONS
 		- e, E
 	- Example EXCLUSIVE MOTIONS
@@ -25,7 +25,7 @@
         - gj
         - gk
 
-- All LINEWISE MOTIONS are INCLUSIVE. In other words, an OPERATION using a LINEWISE MOTION includes the last line (towards the end of the buffer) that was moved over.
+- All LINEWISE MOTIONS are INCLUSIVE. In other words, an OPERATION using a LINEWISE MOTION includes the last line (towards the end of the buffer).
 
 # OPERATIONS with TEXT OBJECTS
 - An OPERATION using a LINEWISE TEXT OBJECT affects all the characters on the start line and end line (and on all the lines between them), including the newlines. An OPERATION using a CHARWISE TEXT OBJECT affects just the start character and end character (and all the characters between them).
@@ -38,20 +38,17 @@
 		- is
 		- as
 
-- All TEXT OBJECTS are INCLUSIVE. An OPERATION using a TEXT OBJECT includes the last character or line (towards the end of the buffer) that was part of the TEXT OBJECT.
-
-- When a TEXT OBJECT is used in Visual mode, you are changed to (or left in) either Visual LINEWISE mode or Visual CHARWISE mode to match the TEXT OBJECT
+- All TEXT OBJECTS are INCLUSIVE. An OPERATION using a TEXT OBJECT includes the last character or last line (towards the end of the buffer) that was part of the TEXT OBJECT.
 
 # Force change behavior of OPERATION
-You can force change the behavior of an OPERATION by entering v or V just after the OPERATOR
-    - v
-        - if MOTION is LINEWISE, make it CHARWISE (EXCLUSIVE)
-        - if MOTION is CHARWISE, toggle INCLUSIVE/EXCLUSIVE
-        - if TEXT OBJECT, toggle INCLUSIVE/EXCLUSIVE
-    - V
-        - if MOTION is CHARWISE, make it LINEWISE
-        - if TEXT OBJECT is CHARWISE, make it LINEWISE
-    - CTRL-V
+You can force change the behavior of an OPERATION by entering `v` or `V` or `CTRL-V` just after the OPERATOR
+    - `v`
+        - If using LINEWISE MOTION, make it CHARWISE (EXCLUSIVE)
+        - If using CHARWISE MOTION, toggle INCLUSIVE/EXCLUSIVE
+        - If using TEXT OBJECT, toggle INCLUSIVE/EXCLUSIVE
+    - `V`
+        - Make it LINEWISE
+    - `CTRL-V`
         - Make it BLOCKWISE (with the corners of the block defined by the cursor positions before and after)
 
 *Examples*:
@@ -62,8 +59,8 @@ You can force change the behavior of an OPERATION by entering v or V just after 
 # Additional Notes
 - Doubling an OPERATOR means perform an OPERATION on the current line, i.e. use the current line (including the new line at the end) as the TEXT OBJECT
 
-- `cw` and `cW` are OPERATIONS: the `w` is treated like an `e`
+- `cw` and `cW` are special OPERATIONS: the `w` is treated like an `e`
 
 - There are two general exceptions to how MOTIONS work: http://vimdoc.sourceforge.net/htmldoc/motion.html#exclusive
 
-- Confusing NOTE: When text that is operated on is placed in a register (e.g., via a yank or delete), sometimes it includes a newline but this is not always related to anything else, e.g., whether the MOTION or TEXT OBJECT is LINEWISE/CHARWISE or INCLUSIVE/EXCLUSIVE. This is confusing. Example: `yas` when there is only one sentence on the line vs when there are multiple sentences on the line.
+- Confusing NOTE: When text that is operated on is placed in a register (e.g., via a yank or delete), sometimes it is placed there as a whole line, but this is not always related to anything else, e.g., whether the MOTION or TEXT OBJECT is LINEWISE/CHARWISE or INCLUSIVE/EXCLUSIVE. This is confusing. Example: `yas` on the last sentence of a line when there is only one sentence on the line vs when there are multiple sentences on the line.

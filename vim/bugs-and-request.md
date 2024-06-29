@@ -8,7 +8,7 @@
 
 - Default neovim colorscheme
     - Causes NonText highlight group (and linked Whitespace highlight group ) to "disappear" inside Visual selection.
-    - StatusLineNC highlight group background is same as CursorLine. StatusLineNC gackground is probably better as being same as Visual
+    - StatusLineNC highlight group background is same as CursorLine. StatusLineNC background is probably better as being same as Visual
 
 - Visual selection includes "empty" space
     - Repro steps
@@ -22,6 +22,7 @@
         - visually select line entire line `0v$` or `V`
 
 # Requests to make to vim
+- Pasting non-whole lines with `p` or `P` should keep the cursor at the beginning of the pasted text since `gp` already puts it on the other side.
 - Jumping to opening or closing brackets from inside a bracket pair should work for all types of brackets including:
     - [[
     - ]]

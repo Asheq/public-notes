@@ -88,7 +88,7 @@
     - `it`
     - `at`
 
-# Peculiarities Text Object Selections
+# Peculiarities of Text Object Selections
 - word
 - WORD
 - quotes
@@ -101,13 +101,3 @@
         - If the opening bracket is followed immediately by a newline, the newline is not included
         - If the closing bracket is preceded immediately by white space preceded immediately by a newline, the white space is not included (but the newline is)
 - tag
-    - For "inner" tag text objects
-        - Vim gets confused if there is a `>` character somewhere inside the opening tag, e,g., in an attribute
-            - HTML example:
-                - <div id="animals >> mammals >> tigers">Hello</div>
-                     - Actual: `vit` selects `> mammals >> tigers">Hello`
-                     - Expected: `vit` should select `Hello`
-            - React example:
-                - `<Button test={()=> console.log('hi'}>Say Hi</Button>`
-                     - Actual: `vit` selects `console.log('hi'}>Say Hi`
-                     - Expected: `vit` should select `Say Hi`

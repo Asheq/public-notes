@@ -1,19 +1,22 @@
-Below, `N` is a number and `[range]` is a line range
-
 # In Normal mode
-	[N]>>
-		Indent N lines once
+    {count}>>
+        Indent {count} LINES once
 
 # In Visual mode
-	[N]>
-		Indent selected lines N times
+    {count}>
+        Indent selected lines {count} TIMES
 
 # In Command-line mode
-	:[range]>
-		Indent lines in range once
-	:[range]>>
-		Indent lines in range twice
-	:> N
-		Indent N lines once
-	:>> N
-		Indent N lines twice
+    :> {count}
+        Indent {count} LINES once
+    :>> {count}
+        Indent {count} LINES twice
+    :>>> {count}
+        Indent {count} LINES thrice
+
+    :[range]>
+        Indent lines in RANGE once
+    :[range]>>
+        Indent lines in RANGE twice
+    :[range]>>
+        Indent lines in RANGE thrice
