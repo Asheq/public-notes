@@ -11,6 +11,18 @@
     - Causes NonText highlight group (and linked Whitespace highlight group ) to "disappear" inside Visual selection.
     - StatusLineNC highlight group background is same as CursorLine. StatusLineNC background is probably better as being same as Visual
 
+- `<<<` characters for wrapped line are not customizable
+    - listchars extends/precedes and fillchars lastline are confused
+        - top left side behaves differently than bottom right in terms of which character option is used and how many times it is displayed
+
+- zt zb zz does not work in wrapped line, even with smoothscroll on
+
+- H M L does not work with wrapped lines, especially when a wrapped line is only partially in view
+
+- Moving cusor into wrapped lines that are partially visible behaves strangely and inconsistently, coming into it from bottom side and top side
+
+- C-b from very bottom of buffer does not overlap lines correctly
+
 - Visual selection includes "empty" space
     - Repro steps
         - insert text: '    thisisaverylongword    anotherverylongword    anotherone     lastonethatislong'
