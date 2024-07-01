@@ -33,8 +33,6 @@
             - The cursor is left at the first character of the pasted text
         - And the pasted text is whole lines
             - The cursor is left at the first non-whitespace character of the first line of the pasted text
-        - And the pasted text is CHARWISE
-            - The cursor is left at the first character of the pasted text
 
 - `gp` an `gP`
     - When the pasted text is not whole lines
