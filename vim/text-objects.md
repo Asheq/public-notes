@@ -99,5 +99,5 @@
 - brackets
     - For "inner" bracket text objects
         - If the opening bracket is followed immediately by a newline, the newline is not included
-        - If the closing bracket is preceded immediately by white space preceded immediately by a newline, the white space is not included (but the newline is)
+        - If the closing bracket is preceded immediately by whitespace preceded immediately by a newline, the whitespace is not included (but the newline is)
 - tag

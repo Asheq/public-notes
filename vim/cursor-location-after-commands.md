@@ -1,5 +1,5 @@
 # Exiting INSERT MODE
-- Cursor "grows" to left
+- When you exit INSERT MODE, the cursor changes from a "line" to a "block". When this change occurs, the left edge of the block cursor "grows" out to the left. The only exception is when the line cursor is already at the beginning of a buffer line where there is no room to "grow" left, in which case the right edge of the block cursor "grows" out to the right.
 
 # Using TEXT OBJECT in VISUAL MODE
 - Visual Mode
@@ -27,12 +27,14 @@
 # PASTING
 - `p` and `P`
     - When PASTING less than one line
-        - The cursor is left at the last character of the pasted text (STRANGE)
+        - The cursor is left at the last character of the pasted text (BUG?)
     - When PASTING more than one line
         - And the pasted text is not whole lines
             - The cursor is left at the first character of the pasted text
         - And the pasted text is whole lines
             - The cursor is left at the first non-whitespace character of the first line of the pasted text
+        - And the pasted text is CHARWISE
+            - The cursor is left at the first character of the pasted text
 
 - `gp` an `gP`
     - When the pasted text is not whole lines
