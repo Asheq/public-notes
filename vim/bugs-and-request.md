@@ -1,24 +1,17 @@
 # Bugs to report to (neo)vim
-- Returning to a buffer (from another buffer) where your cursor was on a line between the first line and middle line of the second page, vim attempts to scroll that line to the bottom of the window rather than to the center as usual.
+- [vim] Returning to a buffer (from another buffer) where your cursor was on a line between the first line and middle line of the second page, vim attempts to scroll that line to the bottom of the window rather than to the center as usual.
 
-- Default neovim colorscheme
+- [neovim] Default neovim colorscheme
     - Causes NonText highlight group (and linked Whitespace highlight group ) to "disappear" inside Visual selection.
     - StatusLineNC highlight group background is same as CursorLine. StatusLineNC background is probably better as being same as Visual
 
-- [ and ] marks are not always correct
-    ```
-    - gUw => check `[ and `] => this is correct
-    - yw => check `[ and `] => bug: `] is one character to the right
-    - insert text => check `[ and `] => bug: `] is one character to the right
-    ```
+- <C-b> from very bottom of buffer does not overlap lines correctly
 
 - Moving cusor into wrapped lines that are partially visible behaves strangely and inconsistently, coming into it from bottom side and top side
 
 - zt zb zz does not work in wrapped line, even with smoothscroll on
 
 - H M L does not work with wrapped lines, especially when a wrapped line is only partially in view
-
-- C-b from very bottom of buffer does not overlap lines correctly
 
 - Visual selection includes "empty" space
     - Repro steps
@@ -30,6 +23,13 @@
         - set showbreak=>
         - Decrease window width to make text wrap
         - visually select line entire line `0v$` or `V`
+
+- [ and ] marks are not always correct
+    ```
+    - gUw => check `[ and `] => this is correct
+    - yw => check `[ and `] => bug: `] is one character to the right
+    - insert text => check `[ and `] => bug: `] is one character to the right
+    ```
 
 # Requests to make to (neo)vim
 - Pasting non-whole lines with `p` or `P` should keep the cursor at the beginning of the pasted text since `gp` already puts it on the other side.
