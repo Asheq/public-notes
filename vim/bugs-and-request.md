@@ -1,11 +1,8 @@
 # (neo)vim
-- `<C-b>` from very bottom of buffer does not "overlap" lines correctly
-
-- Moving cusor into wrapped lines that are partially visible behaves strangely and inconsistently, coming into it from bottom side and top side
-
-- `zt` `zb` `zz` do not work as expected from inside a wrapped line, even with `smoothscroll` on
-
-- `H` `M` `L` do not work as expected when wrapped lines are in view, especially when a wrapped line is only partially in view at the bottom or top
+- Issues with wrapped lines
+    - Moving cusor into wrapped lines that are partially visible behaves strangely and inconsistently, coming into it from bottom side and top side
+    - `zt` `zb` `zz` do not work as expected from inside a wrapped line, even with `smoothscroll` on
+    - `H` `M` `L` do not work as expected when wrapped lines are in view, especially when a wrapped line is only partially in view at the bottom or top
 
 - [vim only] Returning to a buffer (from another buffer) where your cursor was on a line between the first line and middle line of the second page, vim attempts to scroll that line to the bottom of the window rather than to the center as usual.
 
