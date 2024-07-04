@@ -60,3 +60,8 @@ Motion            | Linewise (L) or Charwise (C)          | Inclusive (I) or Exc
 `][`              | C                                     | E
 `[]`              | C                                     | E
 `:call FindEnd()` | C                                     | E
+
+# Other remarks
+- Jumplist updates vs `'` mark updates
+    - The jumplist is only updated if the command is a "jump" command AND the cursor moves into a new line
+    - The `'` mark is updated if the command is a "jump" command, regardless of whether the cursor moves into a new line or not
