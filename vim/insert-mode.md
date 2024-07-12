@@ -41,12 +41,12 @@
         u                hexadecimal      4                   ffff     (65535)
         U                hexadecimal      8                   7fffffff (2147483647)
 
-        - You can "short-circuit" out of entering the code point by entering an invalid character, including a Space
+        - You can "short-circuit" out of entering the code point by entering an invalid key, including a <Space>
 
 - Hard-wrapping
-    - `textwidth` and `wrapmargin` cause automatic hard-wrapping (a.k.a. line breaking a.k.a. insertion of newline characters) when typing in Insert mode
-        - Lines are only broken automatically while typing in Insert mode, not in Replace mode, or pasting in Normal mode.
-        - The option formatoptions has some flags that change how line breaking works
+    - '`'textwidth` and `'wrapmargin'` cause automatic hard-wrapping (a.k.a. line breaking a.k.a. insertion of newline characters) when typing in Insert mode
+        - Lines are only broken automatically while typing in Insert mode, not in Replace mode, or pasting in Normal mode
+        - The option `'formatoptions'` has some flags that change how line breaking works
 
 - Tabs and shifting
     - The (screen) column width of a Tab character is variable -- the end column of the character is the column of the next tab stop. Tab stops are located on columns that are multiples of the `'tabstop'` option value.
