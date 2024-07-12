@@ -9,11 +9,11 @@
 - paragraph
 - section
 - brackets:
-    - {
-    - (
-    - [
-    - <
-- tag (example: <div>...</div>)
+    - `{`
+    - `(`
+    - `[`
+    - `<`
+- tag (example: `<div>...</div>`)
 
 # List of Text Object Motions
 - word
@@ -37,14 +37,14 @@
     - `[[`
     - `]]`
 - brackets
-    - {
+    - `{`
         - `[{`
         - `]}`
-    - (
+    - `(`
         - `[(`
         - `])`
-    - [
-    - <
+    - `[`
+    - `<`
 - tag
 
 # List of Text Object Selections
@@ -72,16 +72,16 @@
     - `ap`
 - section
 - brackets
-    - {
+    - `{`
         - `i{` or `iB`
         - `a{` or `aB`
-    - (
+    - `(`
         - `i(` or `ib`
         - `a(` or `ab`
-    - [
+    - `[`
         - `i[`
         - `a[`
-    - <
+    - `<`
         - `i<`
         - `a<`
 - tag

@@ -1,42 +1,42 @@
 # OPERATIONS with MOTIONS
 - An OPERATION using a LINEWISE MOTION affects all the characters on the start line and end line (and on all the lines between them), including the newlines. An OPERATION using a CHARWISE MOTION affects just the start character and end character (and all the characters between them), although the inclusion of the end character depends on the MOTION's INCLUSIVENESS/EXCLUSIVENESS (see below).
 	- Example LINEWISE MOTIONS
-		- j
-		- k
-		- gg
-		- G
+		- `j`
+		- `k`
+		- `gg`
+		- `G`
 	- Example CHARWISE MOTIONS
-		- e, E
-		- w, W
-		- b, B
-		- (
-		- )
-        - gj
-        - gk
+		- `e`, `E`
+		- `w`, `W`
+		- `b`, `B`
+		- `(`
+		- `)`
+        - `gj`
+        - `gk`
 
 - Each CHARWISE MOTION is either INCLUSIVE or EXCLUSIVE. An OPERATION using an EXCLUSIVE MOTION does not include the last character (towards the end of the buffer), whereas using an INCLUSIVE MOTION does.
 	- Example INCLUSIVE MOTIONS
-		- e, E
+		- `e`, `E`
 	- Example EXCLUSIVE MOTIONS
-		- w, W
-		- b, B
-        - (
-        - )
-        - gj
-        - gk
+		- `w`, `W`
+		- `b`, `B`
+        - `(`
+        - `)`
+        - `gj`
+        - `gk`
 
 - All LINEWISE MOTIONS are INCLUSIVE. In other words, an OPERATION using a LINEWISE MOTION includes the last line (towards the end of the buffer).
 
 # OPERATIONS with TEXT OBJECTS
 - An OPERATION using a LINEWISE TEXT OBJECT affects all the characters on the start line and end line (and on all the lines between them), including the newlines. An OPERATION using a CHARWISE TEXT OBJECT affects just the start character and end character (and all the characters between them).
 	- Example LINEWISE TEXT OBJECTS:
-		- ip
-		- ap
+		- `ip`
+		- `ap`
 	- Example CHARWISE TEXT OBJECTS:
-		- iw
-		- aw
-		- is
-		- as
+		- `iw`
+		- `aw`
+		- `is`
+		- `as`
 
 - All TEXT OBJECTS are INCLUSIVE. An OPERATION using a TEXT OBJECT includes the last character or last line (towards the end of the buffer) that was part of the TEXT OBJECT.
 
