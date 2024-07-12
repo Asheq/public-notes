@@ -34,3 +34,11 @@
 - `textwidth` and `wrapmargin` cause automatic hard-wrapping (a.k.a. line breaking a.k.a. insertion of newline characters) when typing in Insert mode
     - Lines are only broken automatically while typing in Insert mode, not in Replace mode, or pasting in Normal mode.
     - The option formatoptions has some flags that change how line breaking works
+- The (screen) column width of a Tab character is variable -- the end column of the character is the column of the next tab stop. Tab stops are located on columns that are multiples of the `'tabstop'` option value.
+- The `<Tab>` key normally inserts a Tab character. However, with `'expandtab' `set, the `<Tab>` key will insert the number of Space characters required to move the cursor to just past the next tab stop (at the time the key is pressed).
+- It is rare for `'shiftwidth'` to be set to non-zero and differ from `'tabstop',` but it is possible.
+- `>>` always adds `'shiftwidth'` columns of white space at the beginning of the line (regardless of what white space is already there). The resulting characters at the beginning of the line will be a combination of Tabs and Spaces, depending on the value of `'expandtab'`:
+        - With `'expandtab'` set, only Spaces will be used
+        - With `'expandtab'` not set, as many Tabs as possible will be used and then Spaces will be used to fill the remainder if necessary. Note that there can only be a remainder if `'tabstop'` and `'shiftwidth'` differ or if there were already some extra Spaces at the begging of the line.
+    White space at the beginning of the line will be COMPLETELY replaced if needed.
+- `'smarttab'` causes a `<Tab>` key at the beginning of the line to take `'shiftwidth'` into consideration instead of `'tabstop'`. It will insert whatever white space characters are required to move the cursor to the next column that is a multiple of 'shiftwidth'. Whether just Spaces are used or Tabs are also used depends on the value of `'expandtab'`. `<BS>` normally only deletes one character, but `'smarttab'` makes it so it deletes up to the previous tab stop at the beginning of the line.

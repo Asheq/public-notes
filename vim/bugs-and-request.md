@@ -1,4 +1,17 @@
 # (neo)vim
+- [neovim only] The value of shiftwidth is used where it should not be
+    - Setup:
+        - :set tabstop=8
+        - :set smarttab
+        - :set shiftwidth=3
+        - :set expandtab (does not matter actually)
+        - :set list
+        - :set listchars=tab:>\ ,space:*
+    - Pressing the `<Tab>` key BEFORE the first non-white space character on the line should insert white space up to the next multiple of `'shiftwidth'`
+        - Both vim and neovim do this
+    - Pressing the `<Tab>` key AFTER the first non-white space character on the line should insert white space up to the next multiple of `'tabstop'`
+        - Vim does this. neovim does not
+
 - `[` and `]` marks are not always correct
 ```
     - gUw => check `[ and `] => this is correct
