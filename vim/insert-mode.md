@@ -1,34 +1,36 @@
 # Interesting keys in Insert mode
-- <S-Left>        cursor one word back (like "b" command)
-- <S-Right>       cursor one word forward (like "w" command)
+- `<S-Left>`        cursor one word back (like "b" command)
+- `<S-Right>`       cursor one word forward (like "w" command)
 
-- CTRL-]          trigger abbreviation, without inserting a character
+- `CTRL-]`          trigger abbreviation, without inserting a character
 
-- CTRL-A          insert previously inserted text
+- `CTRL-A`          insert previously inserted text
 
-- CTRL-G j        cursor one line down, insert start column
-- CTRL-G CTRL-J   cursor one line down, insert start column
-- CTRL-G k        cursor one line up, insert start column
-- CTRL-G CTRL-K   cursor one line up, insert start column
+- `CTRL-G j`        cursor one line down, insert start column
+- `CTRL-G CTRL-J`   cursor one line down, insert start column
+- `CTRL-G k`        cursor one line up, insert start column
+- `CTRL-G CTRL-K`   cursor one line up, insert start column
 
 # Notes
-- Many keys in Insert mode close the current undo sequence, including `<Left>` and `<Right>`. In this way, they act like `CTRL-G u`. For all such keys, see `:h ins-special-special`. The text inserted since the last time a key from this set was pressed is placed in the `.` register (and is thus used by `CTRL-A` in Insert mode) and becomes the change (specifically a text insertion with `i` command) that is repeated with `.` repeat command in Normal mode.
+- Many keys in Insert mode close the current undo sequence, including `<Left>` and `<Right>`. In this way, they act like `CTRL-G u`. For all such keys, see `:h ins-special-special`. The text inserted since the last time a key from this set was pressed is placed in the `.` register (and is thus used by `CTRL-A` in Insert mode) and becomes the change that is repeated with `.` repeat command in Normal mode. Specifically, the change is saved as a text insertion with the `i` command.
     - Note that these are separate concepts:
         - Undo sequences and associated `u` / `CTRL-R` commands
         - The `.` register and associated `CTRL-A` Insert mode command
-        - Normal mode `.` repeat command
+        - The Normal mode `.` repeat command
 
-- Triggering abbrevitations
-    - Characters that are not part of `'iskeyword'` trigger an abbreviation when inserted
-        - This usually includes characters like:
-            - ` ` (Space character)
-            - `/`
-            - `.`
-            - Newline (whatever character is inserted by `<Enter>` key)
-        - Press `CTRL-V {char}` to enter one of these characters without triggering an abbreviation
-    - Exiting Insert mode with `<Esc>` or `CTRL-[` triggers an abbreviation
-    - Exiting Insert mode with `CTRL-C` does not trigger an abbreviation
-    - `CTRL-]` triggers an abbreviation without inserting another character
+- Abbreviations
+    - An abbreviation is triggered when:
+        - A character that is not part of `'iskeyword'` is inserted
+            - This usually includes characters like:
+                - ` ` (Space character)
+                - `/`
+                - `.`
+                - Newline character (whatever character is inserted by the `<Enter>` key)
+        - Insert mode is exited with `<Esc>` or `CTRL-[`
+        - `CTRL-]` is pressed
+    - An abbreviation is not triggered when:
+        - Insert mode is exited with `CTRL-C`
+        - `CTRL-V {char}` is pressed even if `{char}` is not a part of `'iskeyword'`
 
 - Press `CTRL-J` (instead of `<Enter>`) to insert a newline without having the `<Enter>` key get "eaten" by the coc.nvim PUM when it is visible
 
