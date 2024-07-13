@@ -1,4 +1,4 @@
-# This was copied from the PragmataPro [website](https://www.fsd.it/pragmatapro/All_chars.txt) for my convenience.
+# Source: PragmataPro website: https://www.fsd.it/pragmatapro/All_chars.txt
 
 PRAGMATAPRO 0.828 ALL CHARS
 

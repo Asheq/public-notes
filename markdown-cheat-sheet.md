@@ -73,7 +73,7 @@ The syntax for an image is the same as that for for a link but with a leading ex
 
 Image that is a link:
 
-[![4K VIDEO](https://upload.wikimedia.org/wikipedia/en/8/88/DuckDuckGo_logo.svg)](https://duckduckgo.com/)
+[![Duck Duck Go](https://upload.wikimedia.org/wikipedia/en/8/88/DuckDuckGo_logo.svg)](https://duckduckgo.com/)
 
 ## In-line code
 * In-line code with `backticks`
@@ -90,11 +90,6 @@ Image that is a link:
 	<dd>used as a greeting or to <b>begin</b> a conversation</dd>
 	<dt>Goodbye</dt>
 	<dd>used to express good wishes when parting or at the <b>end</b> of a conversation</dd>
-</div>
-<div>
-    <a href="http://www.youtube.com/watch?feature=player_embedded&v=Bey4XXJAqS8" target="_blank">
-        <img src="http://img.youtube.com/vi/Bey4XXJAqS8/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" />
-    </a>
 </div>
 
 ## Line breaks
@@ -156,7 +151,7 @@ Table with vertical lines and dashes:
 
 <i>Notes:</i>
 * Colons can be used to align columns
-* Outer pipes are optional
+* Outer vertical lines are optional
 * Raw Markdown does not need to line up prettily
 * Can embed in-line Markdown
 
@@ -175,15 +170,13 @@ asterisks
 ***
 
 
-Markdown Heading 1 with hyphens
----
-
 Markdown Heading 1 with equal signs
 ===
 
-# Markdown Headings with number signs 
+Markdown Heading 2 with hyphens
+---
 
-Headings with leading number signs:
+# Heading 1
 ## Heading 2
 ### Heading 3
 #### Heading 4
