@@ -1,167 +1,186 @@
 # Mappings
 
-Below is a list of every key on a standard QWERTY keyboard, grouped into categories, and represented the same way they would in a vim key mapping. Modifier variants are not shown comprehensively but an example is shown for each category.
+Below is a list of every key (and single-modifier key chord) on a standard QWERTY keyboard, grouped into categories, and represented the same way they would in a Vim key mapping. If pressing a key conventionally inserts a character with a visible glyph into a text buffer, then that character is used to represent the key in a mapping. If pressing a key does not conventionally insert a character with a visible glyph into the buffer, then an angle bracket syntax is used. This includes when:
+    - A character with an invisible glyph is inserted
+    - A character with no glyph is inserted
+    - No character is inserted
 
 ## Alphabet Keys:
-- `a`
-- `b`
-- `c`
-- `d`
-- `e`
-- `f`
-- `g`
-- `h`
-- `i`
-- `j`
-- `k`
-- `l`
-- `m`
-- `n`
-- `o`
-- `p`
-- `q`
-- `r`
-- `s`
-- `t`
-- `u`
-- `v`
-- `w`
-- `x`
-- `y`
-- `z`
-### Examples with modifiers
-- `a`
-    - Shift: `A` or `<S-a>`
-    - Ctrl: `<C-a>`
-    - Alt: `<A-a>`
-    - Cmd: `<D-a>`
+- Alone
+    - `a` `b` `c` `d` `e` `f` `g` `h` `i` `j` `k` `l` `m` `n` `o` `p` `q` `r` `s` `t` `u` `v` `w` `x` `y` `z`
+- Shift
+    - `A` `B` `C` `D` `E` `F` `G` `H` `I` `J` `K` `L` `M` `N` `O` `P` `Q` `R` `S` `T` `U` `V` `W` `X` `Y` `Z`
+- Ctrl
+    - `<C-a>` ...
+- Alt
+    - `<A-a>` ...
+- Cmd
+    - `<D-a>` ...
 
 ## Number Keys:
-- `0`
-- `1`
-- `2`
-- `3`
-- `4`
-- `5`
-- `6`
-- `7`
-- `8`
-- `9`
-### Examples with modifiers
-- `8`
-    - Shift: `*`
-    - Ctrl: `<C-8>`
-    - Alt: `<A-8>`
-    - Cmd: `<D-8>`
+- Alone
+    - `1` `2` `3` `4` `5` `6` `7` `8` `9` `0`
+- Shift
+    - `!` `@` `#` `$` `%` `^` `&` `*` `(` `)`
+- Ctrl: 
+    - `<C-1>` ...
+- Alt:
+    - `<A-1>` ...
+- Cmd:
+    - `<D-1>` ...
 
 ## Punctuation and Symbols:
-- `` ` ``
-- `-`
-- `=`
-- `[`
-- `]`
-- `\`
-- `;`
-- `'`
-- `,`
-- `.`
-- `/`
-### Examples with modifiers
-- `;`
-    - Shift: `:`
-    - Ctrl: `<C-;>`
-    - Alt: `<A-;>`
-    - Cmd: `<D-;>`
+- Alone
+    - `` ` `` `-` `=` `[` `]` `\` `;` `'` `,` `.` `/`
+- Shift
+    - `` ~ `` `_` `+` `{` `}` `|` `:` `"` `<` `>` `?`
+- Ctrl
+    - `<C-=>` ...
+- Alt
+    - `<A-=>` ...
+- Cmd
+    - `<D-=>` ...
 
-## Space Key
-- `<Space>` (produces a printable whitespace character)
+## Whitespace Keys:
+- Alone
+    - `<Space>` `<Tab>` `<Enter>` or `<Return>`
+    - NOTE: `<Space>` normally inserts a character with an invisible glyph. `<Tab>` normally inserts a character with no glyph. `<Enter>` normally inserts a character (or two) with no glyphs.
+- Shift
+    - `<S-Space>` ...
+- Ctrl
+    - `<C-Space>` ...
+- Alt
+    - `<A-Space>` ...
+- Cmd
+    - `<D-Space>` ...
 
-### Examples with modifiers
-- `<Space>`
-    - Shift: `<S-Space>` (Test failed)
-    - Ctrl: `<C-Space>`
-    - Alt: `<A-Space>`
-    - Cmd: `<D-Space>`
 ## Other Keys:
-- `<Tab>`
-- `<Enter>` or `<Return>`
-- `<BS>`
-- `<Esc>`
-- `<Insert>`
-- `<Delete>`
+- Alone
+    - `<BS>` `<Esc>` `<Insert>` `<Delete>`
+- Shift
+    - `<S-BS>` ...
+- Ctrl
+    - `<C-BS>` ...
+- Alt
+    - `<A-BS>` ...
+- Cmd
+    - `<D-BS>` ...
 
 ## Navigation Keys:
-- `<Up>`
-- `<Down>`
-- `<Left>`
-- `<Right>`
-- `<Home>`
-- `<End>`
-- `<PageUp>`
-- `<PageDown>`
-### Examples with modifiers
-- `<Up>`
-    - Shift: `<S-Up>`
-    - Ctrl: `<C-Up>`
-    - Alt: `<A-Up>`
-    - Cmd: `<D-Up>`
+- Alone
+    - `<Up>` `<Down>` `<Left>` `<Right>` `<Home>` `<End>` `<PageUp>` `<PageDown>`
+- Shift
+    - `<S-Up>` ...
+- Ctrl
+    - `<C-Up>` ...
+- Alt
+    - `<A-Up>` ...
+- Cmd
+    - `<D-Up>` ...
 
 ## Function Keys:
-- `<F1>`
-- `<F2>`
-- `<F3>`
-- `<F4>`
-- `<F5>`
-- `<F6>`
-- `<F7>`
-- `<F8>`
-- `<F9>`
-- `<F10>`
-- `<F11>`
-- `<F12>`
+- Alone
+    - `<F1>` `<F2>` `<F3>` `<F4>` `<F5>` `<F6>` `<F7>` `<F8>` `<F9>` `<F10>` `<F11>` `<F12>`
 
 ## Numeric Keypad:
-- `<kPlus>` (NumPad +)
-- `<kMinus>` (NumPad -)
-- `<kMultipy>` (NumPad *)
-- `<kDivide>` (NumPad /)
-- `<kPoint>` (NumPad .)
-- `<kComma>` (NumPad ,)
-- `<kEqual>` (NumPad =)
-- `<kEnter>` (NumPad <Enter>)
-- `<kUp>` (NumPad <Up>)
-- `<kDown>` (NumPad <Down>)
-- `<kLeft>` (NumPad <Left>)
-- `<kRight>` (NumPad <Right>)
-- `<kHome>` (NumPad <Home>)
-- `<kEnd>` (NumPad <End>)
-- `<kOrigin>` (NumPad <Origin>)
-- `<kPageUp>` (NumPad <PageUp>)
-- `<kPageDown>` (NumPad <PageDown>)
-- `<kDel>` (NumPad <Del>)
-- `<k0>` (NumPad 0)
-- `<k1>` (NumPad 1)
-- `<k2>` (NumPad 2)
-- `<k3>` (NumPad 3)
-- `<k4>` (NumPad 4)
-- `<k5>` (NumPad 5)
-- `<k6>` (NumPad 6)
-- `<k7>` (NumPad 7)
-- `<k8>` (NumPad 8)
-- `<k8>` (NumPad 9)
+- Alone
+    - `<kPlus>` `<kMinus>` `<kMultipy>` `<kDivide>` `<kPoint>` `<kComma>` `<kEqual>` `<kEnter>` `<kUp>` `<kDown>` `<kLeft>` `<kRight>` `<kHome>` `<kEnd>` `<kOrigin>` `<kPageUp>` `<kPageDown>` `<kDel>` `<k0>` `<k1>` `<k2>` `<k3>` `<k4>` `<k5>` `<k6>` `<k7>` `<k8>` `<k8>`
+    - NOTE: Some of these keys insert a character with a visible glyph, but since that character is already used to represent another key, Vim needs to use the angle bracket notation to represent these keys.
 ## Non Mappable Keys:
-- (Caps Lock)
-- (Print Screen)
-- (Scroll Lock)
-- (Pause/Break)
-- (Num Lock)
+- (Caps Lock) (Print Screen) (Scroll Lock) (Pause/Break) (Num Lock)
+- NOTE: These keys are never sent to Vim because they are consumed by the OS
 
 # Macros
 
-When saving keys pressed while recording a macro into a register, Vim does not save the keys in the same syntax as the left-hand side of a mapping...
+When saving keys that have been pressed (saving them into a register) while recording a macro, Vim does not represent the keys in the same syntax as Vim key mappings. Below is the same list as in the "# Mappings" section above but in this other syntax.
 
-## Prefixes for modifiers
-€ü = Shift
-€ü = Alt
-€ü = Ctrl
-€ü€ = Cmd
+## Alphabet Keys:
+- Alone
+    - `a` `b` `c` `d` `e` `f` `g` `h` `i` `j` `k` `l` `m` `n` `o` `p` `q` `r` `s` `t` `u` `v` `w` `x` `y` `z`
+- Shift
+    - `A` `B` `C` `D` `E` `F` `G` `H` `I` `J` `K` `L` `M` `N` `O` `P` `Q` `R` `S` `T` `U` `V` `W` `X` `Y` `Z`
+- Ctrl
+    - `` ...
+    - `€üA` ...
+- Alt
+    - `a` ...
+    - `€üa` ...
+- Cmd
+    - `€ü€a` ...
+## Number Keys:
+- Alone
+    - `1` `2` `3` `4` `5` `6` `7` `8` `9` `0`
+- Shift
+    - `!` `@` `#` `$` `%` `^` `&` `*` `(` `)`
+- Ctrl: 
+    - `€ü3` ...
+- Alt:
+    - `3` ...
+    - `€ü3` ...
+- Cmd:
+
+## Punctuation and Symbols:
+- Alone
+    - `` ` `` `-` `=` `[` `]` `\` `;` `'` `,` `.` `/`
+- Shift
+    - `` ~ `` `_` `+` `{` `}` `|` `:` `"` `<` `>` `?`
+- Ctrl
+    - `€ü.` ...
+- Alt
+    - `.` ...
+    - `€ü.` ...
+- Cmd
+    - `€ü€.` ...
+
+## Whitespace Keys:
+### Space
+    - Alone
+        - ` `
+    - Shift
+        - ` `
+    - Ctrl
+        - `€ü `
+    - Alt
+        - ` `
+        - `€ü `
+    - Cmd
+        - `€ü€ `
+### Tab
+    - Alone
+        - `	`
+    - Shift
+        - `€kB`
+    - Ctrl
+        - `€ü	`
+    - Alt
+        - `	`
+        - `€ü	`
+    - Cmd
+### Enter
+    - Alone
+        - ``
+    - Shift
+        - `€ü`
+    - Ctrl
+        - `€ü`
+    - Alt
+        - ``
+        - `€ü`
+    - Cmd
+        - `€ü€`
+
+## Other Keys:
+- Alone
+    - `€kb` `` `???` `???`
+
+## Navigation Keys:
+- Alone
+    - `€ku` `€kd` `€kl` `€kr` `???` `???` `???` `???` `???`
+
+## Function Keys:
+- Alone
+    - `€k1` `€k2` `€k3` `€k4` `€k5` `€k6` `€k7` `€k8` `€k9` `€k;` `???` `€F2`
+
+## Numeric Keypad:
+- Alone
+    - `???` ...
