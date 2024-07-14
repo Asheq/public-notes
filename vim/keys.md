@@ -1,15 +1,6 @@
-# Keys
+# Mappings
 
 Below is a list of every key on a standard QWERTY keyboard, grouped into categories, and represented the same way they would in a vim key mapping. Modifier variants are not shown comprehensively but an example is shown for each category.
-
-<!--
-For testing modifier variants:
-
-nmap <S-a> :echo 'S-a'
-nmap <C-a> :echo 'C-a'
-nmap <A-a> :echo 'A-a'
-nmap <D-a> :echo 'D-a'
--->
 
 ## Alphabet Keys:
 - `a`
@@ -63,22 +54,6 @@ nmap <D-a> :echo 'D-a'
     - Alt: `<A-8>`
     - Cmd: `<D-8>`
 
-## Navigation Keys:
-- `<Up>`
-- `<Down>`
-- `<Left>`
-- `<Right>`
-- `<Home>`
-- `<End>`
-- `<PageUp>`
-- `<PageDown>`
-### Examples with modifiers
-- `<Up>`
-    - Shift: `<S-Up>`
-    - Ctrl: `<C-Up>`
-    - Alt: `<A-Up>`
-    - Cmd: `<D-Up>`
-
 ## Punctuation and Symbols:
 - `` ` ``
 - `-`
@@ -98,20 +73,38 @@ nmap <D-a> :echo 'D-a'
     - Alt: `<A-;>`
     - Cmd: `<D-;>`
 
-## Other Keys:
-- `<Space>`
-- `<Enter>` or `<Return>`
-- `<BS>`
-- `<Tab>`
-- `<Esc>`
-- `<Insert>`
-- `<Delete>`
+## Space Key
+- `<Space>` (produces a printable whitespace character)
+
 ### Examples with modifiers
 - `<Space>`
     - Shift: `<S-Space>` (Test failed)
     - Ctrl: `<C-Space>`
     - Alt: `<A-Space>`
     - Cmd: `<D-Space>`
+## Other Keys:
+- `<Tab>`
+- `<Enter>` or `<Return>`
+- `<BS>`
+- `<Esc>`
+- `<Insert>`
+- `<Delete>`
+
+## Navigation Keys:
+- `<Up>`
+- `<Down>`
+- `<Left>`
+- `<Right>`
+- `<Home>`
+- `<End>`
+- `<PageUp>`
+- `<PageDown>`
+### Examples with modifiers
+- `<Up>`
+    - Shift: `<S-Up>`
+    - Ctrl: `<C-Up>`
+    - Alt: `<A-Up>`
+    - Cmd: `<D-Up>`
 
 ## Function Keys:
 - `<F1>`
@@ -136,6 +129,16 @@ nmap <D-a> :echo 'D-a'
 - `<kComma>` (NumPad ,)
 - `<kEqual>` (NumPad =)
 - `<kEnter>` (NumPad <Enter>)
+- `<kUp>` (NumPad <Up>)
+- `<kDown>` (NumPad <Down>)
+- `<kLeft>` (NumPad <Left>)
+- `<kRight>` (NumPad <Right>)
+- `<kHome>` (NumPad <Home>)
+- `<kEnd>` (NumPad <End>)
+- `<kOrigin>` (NumPad <Origin>)
+- `<kPageUp>` (NumPad <PageUp>)
+- `<kPageDown>` (NumPad <PageDown>)
+- `<kDel>` (NumPad <Del>)
 - `<k0>` (NumPad 0)
 - `<k1>` (NumPad 1)
 - `<k2>` (NumPad 2)
@@ -146,10 +149,19 @@ nmap <D-a> :echo 'D-a'
 - `<k7>` (NumPad 7)
 - `<k8>` (NumPad 8)
 - `<k8>` (NumPad 9)
-- etc.
 ## Non Mappable Keys:
 - (Caps Lock)
 - (Print Screen)
 - (Scroll Lock)
 - (Pause/Break)
 - (Num Lock)
+
+# Macros
+
+When saving keys pressed while recording a macro into a register, Vim does not save the keys in the same syntax as the left-hand side of a mapping...
+
+## Prefixes for modifiers
+€ü = Shift
+€ü = Alt
+€ü = Ctrl
+€ü€ = Cmd

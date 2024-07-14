@@ -1,4 +1,5 @@
 # (neo)vim
+- Shouldn't the text that is stored inside a register when recording a macro have the same syntax as the left-hand side of a mapping?
 - [neovim only] The value of `shiftwidth` is used where it should not be
     - Setup:
         ```
