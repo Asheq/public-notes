@@ -59,3 +59,10 @@
             - With `'expandtab'` not set, as many Tabs as possible will be used and then Spaces will be used to fill the remainder if necessary. Note that there can only be a remainder if `'tabstop'` and `'shiftwidth'` differ or if there were already some extra Spaces at the begging of the line.
         White space at the beginning of the line will be COMPLETELY replaced if needed.
     - `'smarttab'` causes a `<Tab>` key at the beginning of the line to take `'shiftwidth'` into consideration instead of `'tabstop'`. It will insert whatever white space characters are required to move the cursor to the next column that is a multiple of 'shiftwidth'. Whether just Spaces are used or Tabs are also used depends on the value of `'expandtab'`. `<BS>` normally only deletes one character, but `'smarttab'` makes it so it deletes up to the previous tab stop at the beginning of the line.
+
+# Interesting keys to enter Insert mode
+`gI`
+`gi`
+
+# Automatic indenting for new lines
+When creating a new line (either by hitting `<Enter>` in Insert mode or by entering Insert mode with `o` or `O`), indenting can be automatically calculated and inserted if certain options are set. These options include 'autoindent', 'smartindent', 'cindent', etc. Learn more from `:h indent.txt`
