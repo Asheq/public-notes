@@ -1,5 +1,5 @@
 # (neo)vim
-- Shouldn't the text that is stored inside a register when recording a macro have the same syntax as the left-hand side of a mapping?
+- Shouldn't the text that is stored inside a register when recording a macro have the same syntax as the left-hand side of a mapping? It would make it way more readable than the obscure text that is stored in there now.
 - [neovim only] The value of `shiftwidth` is used where it should not be
     - Setup:
         ```
@@ -55,3 +55,6 @@
 
 # preservim/vim-markdown
 - `CursorHold` autocommand seems to mess with the default column that a cursor goes to when entering a line
+
+# Coc
+- Can I use `:CocList files`, `:CocList mru`, etc. to populate a file inside an ex command? For example, can I type `:read ` and then press a key to select a file using the interface from a `:CocList` command?

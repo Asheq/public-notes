@@ -14,7 +14,7 @@
         - `gj`
         - `gk`
 
-- Each CHARWISE MOTION is either INCLUSIVE or EXCLUSIVE. An OPERATION using an EXCLUSIVE MOTION does not include the last character (towards the end of the buffer), whereas using an INCLUSIVE MOTION does.
+- Each CHARWISE MOTION is either INCLUSIVE or EXCLUSIVE. An OPERATION using an EXCLUSIVE MOTION does not include the last character (towards the end of the buffer), whereas one using an INCLUSIVE MOTION does.
 	- Example INCLUSIVE MOTIONS
 		- `e`, `E`
 	- Example EXCLUSIVE MOTIONS
@@ -41,7 +41,7 @@
 - All TEXT OBJECTS are INCLUSIVE. An OPERATION using a TEXT OBJECT includes the last character or last line (towards the end of the buffer) that was part of the TEXT OBJECT.
 
 # Force change behavior of OPERATION
-You can force change the behavior of an OPERATION by entering `v` or `V` or `CTRL-V` just after the OPERATOR
+You can force change the behavior of an OPERATION by pressing `v`, `V`, or `CTRL-V` just after the OPERATOR
     - `v`
         - If using LINEWISE MOTION, make it CHARWISE (EXCLUSIVE)
         - If using CHARWISE MOTION, toggle INCLUSIVE/EXCLUSIVE
@@ -57,7 +57,7 @@ You can force change the behavior of an OPERATION by entering `v` or `V` or `CTR
 - `d<C-v>j` - Deletes the character under the cursor and the character below the cursor
 
 # Additional Notes
-- Doubling an OPERATOR means perform an OPERATION on the current line, i.e. use the current line (including the new line at the end) as the TEXT OBJECT
+- Doubling an OPERATOR means perform an OPERATION on the current line, i.e. use the current line (including the newline at the end) as the TEXT OBJECT
 
 - `cw` and `cW` are special OPERATIONS: the `w` is treated like an `e`
 

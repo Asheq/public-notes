@@ -1,9 +1,9 @@
 # Mappings
 
 Below is a list of every key (and single-modifier key chord) on a standard QWERTY keyboard, grouped into categories, and represented the same way they would in a Vim key mapping. If pressing a key conventionally inserts a character with a visible glyph into a text buffer, then that character is used to represent the key in a mapping. If pressing a key does not conventionally insert a character with a visible glyph into the buffer, then an angle bracket syntax is used. This includes when:
-    - A character with an invisible glyph is inserted
-    - A character with no glyph is inserted
-    - No character is inserted
+    - A character with an invisible glyph is inserted: `<Space>`
+    - A character with no glyph is inserted: `<C-a>`, `<Tab>`, `<Enter>`, 
+    - No character is inserted: `<Left>`, `<BS>`
 
 ## Alphabet Keys:
 - Alone
@@ -100,13 +100,14 @@ When saving keys that have been pressed (saving them into a register) while reco
 - Shift
     - `A` `B` `C` `D` `E` `F` `G` `H` `I` `J` `K` `L` `M` `N` `O` `P` `Q` `R` `S` `T` `U` `V` `W` `X` `Y` `Z`
 - Ctrl
-    - `` ...
     - `€üA` ...
+    - `` ...
 - Alt
-    - `a` ...
     - `€üa` ...
+    - `a` ...
 - Cmd
     - `€ü€a` ...
+
 ## Number Keys:
 - Alone
     - `1` `2` `3` `4` `5` `6` `7` `8` `9` `0`
@@ -115,9 +116,10 @@ When saving keys that have been pressed (saving them into a register) while reco
 - Ctrl: 
     - `€ü3` ...
 - Alt:
-    - `3` ...
     - `€ü3` ...
+    - `3` ...
 - Cmd:
+    - `???`
 
 ## Punctuation and Symbols:
 - Alone
@@ -127,8 +129,8 @@ When saving keys that have been pressed (saving them into a register) while reco
 - Ctrl
     - `€ü.` ...
 - Alt
-    - `.` ...
     - `€ü.` ...
+    - `.` ...
 - Cmd
     - `€ü€.` ...
 
@@ -141,10 +143,11 @@ When saving keys that have been pressed (saving them into a register) while reco
     - Ctrl
         - `€ü `
     - Alt
-        - ` `
         - `€ü `
+        - ` `
     - Cmd
         - `€ü€ `
+
 ### Tab
     - Alone
         - `	`
@@ -153,9 +156,10 @@ When saving keys that have been pressed (saving them into a register) while reco
     - Ctrl
         - `€ü	`
     - Alt
-        - `	`
         - `€ü	`
+        - `	`
     - Cmd
+        - `???`
 ### Enter
     - Alone
         - ``
@@ -171,11 +175,11 @@ When saving keys that have been pressed (saving them into a register) while reco
 
 ## Other Keys:
 - Alone
-    - `€kb` `` `???` `???`
+    - `€kb` `` `€kI` `€kD`
 
 ## Navigation Keys:
 - Alone
-    - `€ku` `€kd` `€kl` `€kr` `???` `???` `???` `???` `???`
+    - `€ku` `€kd` `€kl` `€kr` `€kh` `€@7` `€kP` `€kN`
 
 ## Function Keys:
 - Alone

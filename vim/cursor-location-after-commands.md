@@ -1,5 +1,5 @@
 # Exiting INSERT MODE
-- When you exit INSERT MODE, the cursor changes from a "line" to a "block". When this change occurs, the left edge of the block cursor "grows" out to the left. The only exception is when the line cursor is already at the beginning of a buffer line where there is no room to "grow" left, in which case the right edge of the block cursor "grows" out to the right.
+- When you exit INSERT MODE, the cursor changes from a "line" to a "block". When this change occurs, the left edge of the block cursor "grows" out to the left (from the right). The only exception is when the line cursor is already at the beginning of a buffer line: because there is no room to grow left here, the right edge of the block cursor grows out to the right (from the left).
 
 # Using TEXT OBJECT in VISUAL MODE
 - Visual Mode
@@ -20,7 +20,7 @@
 
 # Performing an OPERATION
 - After an OPERATION, the cursor moves to the start character or start line (sometimes preserving the column, sometimes not) of operated text
-    - Exceptions: Some commands do something else. Examples:
+    - Exceptions: Some commands explicitly do something else. Examples:
         - `gw`: Keeps the cursor in place
         - `gq`: Moves the cursor to the first non-blank of the last formatted line
 
@@ -39,3 +39,6 @@
         - The cursor is left one character after the last character of the pasted text
     - When the pasted text is whole lines
         - The cursor is left at the first character of the line after the last line of the pasted text
+
+# After :read command
+- The cursor is left on the first non-blank in the first new line

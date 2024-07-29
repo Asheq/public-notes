@@ -30,7 +30,7 @@ Motion            | Linewise (L) or Charwise (C)          | Inclusive (I) or Exc
 `g0`              | C                                     | E
 `g^`              | C                                     | E
 `gm`              | C                                     | E
-`|`              | C                                     | E
+`|`               | C                                     | E
 `F{char}`         | C                                     | E
 `T{char}`         | C                                     | E
 `gk`              | C                                     | E

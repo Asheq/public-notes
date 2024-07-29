@@ -1,14 +1,14 @@
 # List of Text Objects
 - word
 - WORD
-- quotes
++ quotes:
     - "
     - '
     - `` ` ``
 - sentence
 - paragraph
 - section
-- brackets:
++ brackets:
     - `{`
     - `(`
     - `[`
@@ -16,88 +16,88 @@
 - tag (example: `<div>...</div>`)
 
 # List of Text Object Motions
-- word
++ word
     - `w`
     - `e`
     - `b`
     - `ge`
-- WORD
++ WORD
     - `W`
     - `E`
     - `B`
     - `gE`
-- quotes
-- sentence
++ quotes
++ sentence
     - `)`
     - `(`
-- paragraph
++ paragraph
     - `}`
     - `{`
-- section
++ section
     - `[[`
     - `]]`
-- brackets
-    - `{`
++ brackets
+    + `{`
         - `[{`
         - `]}`
-    - `(`
+    + `(`
         - `[(`
         - `])`
-    - `[`
-    - `<`
-- tag
+    + `[`
+    + `<`
++ tag
 
 # List of Text Object Selections
-- word
++ word
     - `iw`
     - `aw`
-- WORD
++ WORD
     - `iW`
     - `aW`
-- quotes
-    - "
++ quotes
+    + "
         - `i"`
         - `a"`
-    - '
+    + '
         - `i'`
         - `a'`
-    - `` ` ``
+    + `` ` ``
         - `` i` ``
         - `` a` ``
-- sentence
++ sentence
     - `is`
     - `as`
-- paragraph
++ paragraph
     - `ip`
     - `ap`
-- section
-- brackets
-    - `{`
++ section
++ brackets
+    + `{`
         - `i{` or `iB`
         - `a{` or `aB`
-    - `(`
+    + `(`
         - `i(` or `ib`
         - `a(` or `ab`
-    - `[`
+    + `[`
         - `i[`
         - `a[`
-    - `<`
+    + `<`
         - `i<`
         - `a<`
-- tag
++ tag
     - `it`
     - `at`
 
 # Peculiarities of Text Object Selections
-- word
-- WORD
-- quotes
++ word
++ WORD
++ quotes
     - Opening and closing quotes need to be on the same line for vim to consider the text object
-- sentence
-- paragraph
-- section
-- brackets
-    - For "inner" bracket text objects
++ sentence
++ paragraph
++ section
++ brackets
+    + For "inner" bracket text objects
         - If the opening bracket is followed immediately by a newline, the newline is not included
         - If the closing bracket is preceded immediately by whitespace preceded immediately by a newline, the whitespace is not included (but the newline is)
-- tag
++ tag
