@@ -7,16 +7,14 @@
 - `CTRL-A`          insert previously inserted text
 
 - `CTRL-G j`        cursor one line down, insert start column
-- `CTRL-G CTRL-J`   cursor one line down, insert start column
 - `CTRL-G k`        cursor one line up, insert start column
-- `CTRL-G CTRL-K`   cursor one line up, insert start column
 
 # Notes
 - Many keys in Insert mode close the current undo sequence, including `<Left>` and `<Right>`. In this way, they act like `CTRL-G u`. For all such keys, see `:h ins-special-special`. The text inserted since the last time a key from this set was pressed is placed in the `.` register (and is thus used by `CTRL-A` in Insert mode) and becomes the change that is repeated with `.` repeat command in Normal mode. Specifically, the change is saved as a text insertion with the `i` command.
     - Note that these are separate concepts:
         - Undo sequences and associated `u` / `CTRL-R` commands
-        - The `.` register and associated `CTRL-A` Insert mode command
         - The Normal mode `.` repeat command
+        - The `.` register and associated `CTRL-A` Insert mode command
 
 - Abbreviations
     - An abbreviation is triggered when:

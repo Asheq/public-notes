@@ -57,7 +57,7 @@ You can force change the behavior of an OPERATION by pressing `v`, `V`, or `CTRL
 - `d<C-v>j` - Deletes the character under the cursor and the character below the cursor
 
 # Additional Notes
-- Doubling an OPERATOR means perform an OPERATION on the current line, i.e. use the current line (including the newline at the end) as the TEXT OBJECT
+- Doubling an OPERATOR means perform an OPERATION on the current line, i.e. use the current line (including the newline at the end, most times) as the TEXT OBJECT
 
 - `cw` and `cW` are special OPERATIONS: the `w` is treated like an `e`
 
