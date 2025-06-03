@@ -2,7 +2,7 @@
 
 Below is a list of every key (and single-modifier key chord) on a standard QWERTY keyboard, grouped into categories, and represented the same way they would in a Vim key mapping. If pressing a key conventionally inserts a character with a visible glyph into a text buffer, then that character is used to represent the key in a mapping. If pressing a key does not conventionally insert a character with a visible glyph into the buffer, then an angle bracket syntax is used. This includes when:
     - A character with an invisible glyph is inserted: `<Space>`
-    - A character with no glyph is inserted: `<C-a>`, `<Tab>`, `<Enter>`, 
+    - A character with no glyph is inserted: `<C-a>`, `<Tab>`, `<Enter>`
     - No character is inserted: `<Left>`, `<BS>`
 
 ## Alphabet Keys:
@@ -22,7 +22,7 @@ Below is a list of every key (and single-modifier key chord) on a standard QWERT
     - `1` `2` `3` `4` `5` `6` `7` `8` `9` `0`
 - Shift
     - `!` `@` `#` `$` `%` `^` `&` `*` `(` `)`
-- Ctrl: 
+- Ctrl:
     - `<C-1>` ...
 - Alt:
     - `<A-1>` ...
@@ -113,7 +113,7 @@ When saving keys that have been pressed (saving them into a register) while reco
     - `1` `2` `3` `4` `5` `6` `7` `8` `9` `0`
 - Shift
     - `!` `@` `#` `$` `%` `^` `&` `*` `(` `)`
-- Ctrl: 
+- Ctrl:
     - `€ü3` ...
 - Alt:
     - `€ü3` ...

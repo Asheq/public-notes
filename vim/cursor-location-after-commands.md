@@ -15,7 +15,7 @@
         - If LINEWISE, cursor is left on the BOTTOMMOST line
     - When expanding only on one side, neovim leaves the cursor on whichever edge was expanded to
         - If CHARWISE, cursor is left on either LEFTMOST or RIGHTMOST character
-        - If LINEWISE, cursor is left on on either TOPMOST or BOTTOMMOST line
+        - If LINEWISE, cursor is left on either TOPMOST or BOTTOMMOST line
     - When expanding in VISUAL LINEWISE MODE, cursor is left on first character of whichever line the cursor is left on
 
 # Performing an OPERATION

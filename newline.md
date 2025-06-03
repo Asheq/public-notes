@@ -32,7 +32,7 @@
     - `\n` inserts null
     - `\r` inserts newline
 ### In mappings
-- These represent keys that would normally insert a newline character [sequence] in Insert mode
+- These represent keys that would normally insert a newline in Insert mode
     - `<Enter>`
     - `<Return>`
     - `<CR>`
